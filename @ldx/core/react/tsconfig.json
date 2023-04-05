@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "outDir": "./cjs",
+    "module": "commonjs",
+    "noImplicitAny": false,
+    "jsx": "react",
+    "strict": true,
+    "esModuleInterop": true,
+    "target": "es6",
+    "moduleResolution": "node",
+    "incremental": true,
+    "skipLibCheck": true
+  },
+  "exclude": [
+    "**/stories",
+    "**/*.stories.*",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "**/*.e2e.ts"
+  ],
+  "include": ["./src"]
+}
