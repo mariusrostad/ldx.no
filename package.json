@@ -20,6 +20,16 @@
   "engines": {
     "node": ">=14.0.0"
   },
+  "prettier": {
+    "overrides": [
+      {
+        "files": "**/*.css",
+        "options": {
+          "printWidth": 130
+        }
+      }
+    ]
+  },
   "dependencies": {},
   "packageManager": "pnpm@8.1.0"
 }
