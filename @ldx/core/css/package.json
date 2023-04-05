@@ -1,0 +1,27 @@
+{
+  "name": "@ldx/ds-css",
+  "version": "0.0.1",
+  "description": "CSS for LDX Designsystem",
+  "author": "Marius Rostad",
+  "keywords": [
+    "css"
+  ],
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariusrostad/ldx.no.git"
+  },
+  "main": "./dist/index.css",
+  "scripts": {
+    "build": "postcss --use postcss-import postcss-combine-duplicated-selectors -o dist/index.css index.css",
+    "watch": "postcss --watch --use postcss-import -o dist/index.css index.css"
+  },
+  "devDependencies": {
+    "@ldx/ds-tokens": "workspace:*",
+    "normalize.css": "^8.0.1",
+    "postcss": "^8.4.0",
+    "postcss-cli": "^10.1.0",
+    "postcss-combine-duplicated-selectors": "10.0.3",
+    "postcss-import": "^15.1.0"
+  }
+}
