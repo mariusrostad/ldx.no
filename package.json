@@ -4,21 +4,47 @@
   "private": true,
   "workspaces": [
     "apps/*",
-    "packages/*"
+    "packages/*",
+    "@ldx/core/*"
   ],
   "scripts": {
+    "postinstall": "husky install",
     "build": "turbo run build",
+    "clean": "turbo run clean",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "pnpm build && pnpm docgen && changeset publish",
+    "lint-all": "pnpm eslint . && pnpm stylelint @ldx/**/*.css"
   },
   "devDependencies": {
+    "@changesets/changelog-github": "0.4.7",
+    "@changesets/cli": "2.25.0",
     "eslint-config-custom": "workspace:*",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
     "prettier": "latest",
-    "turbo": "latest"
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "stylelint": "^15.4.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^32.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.7.0",
+    "stylelint-value-no-unknown-custom-properties": "^4.0.0",
+    "turbo": "latest",
+    "typescript": "^4.8.0"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=16.0.0"
+  },
+  "lint-staged": {
+    "*.js": "eslint",
+    "*.jsx": "eslint",
+    "*.ts": "eslint",
+    "*.tsx": "eslint",
+    "*.css": "stylelint"
   },
   "prettier": {
     "overrides": [
@@ -30,6 +56,56 @@
       }
     ]
   },
-  "dependencies": {},
+  "stylelint": {
+    "extends": [
+      "stylelint-config-standard",
+      "stylelint-config-prettier"
+    ],
+    "plugins": [
+      "stylelint-value-no-unknown-custom-properties",
+      "stylelint-declaration-block-no-ignored-properties"
+    ],
+    "rules": {
+      "plugin/declaration-block-no-ignored-properties": true,
+      "value-list-comma-newline-after": null,
+      "declaration-colon-newline-after": null,
+      "no-descending-specificity": null,
+      "selector-class-pattern": null,
+      "custom-property-pattern": null,
+      "keyframes-name-pattern": null,
+      "function-url-quotes": null,
+      "property-no-vendor-prefix": null,
+      "alpha-value-notation": "number",
+      "declaration-property-value-disallowed-list": {
+        "justify-content": [
+          "start",
+          "end"
+        ],
+        "align-items": [
+          "start",
+          "end"
+        ]
+      },
+      "value-keyword-case": [
+        "lower",
+        {
+          "camelCaseSvgKeywords": true
+        }
+      ],
+      "csstools/value-no-unknown-custom-properties": [
+        true,
+        {
+          "importFrom": [
+            "@ldx/core/tokens/dist/tokens.css"
+          ]
+        }
+      ]
+    },
+    "ignoreFiles": [
+      "**/dist/**",
+      "**/esm/**",
+      "**/cjs/**"
+    ]
+  },
   "packageManager": "pnpm@8.1.0"
 }
