@@ -12,7 +12,9 @@
     "next": "^13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "ui": "workspace:*"
+    "ui": "workspace:*",
+    "@ldx/ds-css": "workspace:*",
+    "@ldx/ds-tokens": "workspace:*"
   },
   "devDependencies": {
     "@babel/core": "^7.21.4",

@@ -1,0 +1,67 @@
+{
+  "ldx": {
+    "ds": {
+      "light": {
+        "primary": {
+          "color": {
+            "value": "#ffffff"
+          },
+          "bg": {
+            "value": "#006b58"
+          }
+        },
+        "primary-light": {
+          "color": {
+            "value": "#002019"
+          },
+          "bg": {
+            "value": "#7bf8d8"
+          }
+        },
+        "secondary": {
+          "color": {
+            "value": "#ffffff"
+          },
+          "bg": {
+            "value": "#4b635b"
+          }
+        },
+        "secondary-light": {
+          "color": {
+            "value": "#07201a"
+          },
+          "bg": {
+            "value": "#cde9de"
+          }
+        },
+        "tertiary": {
+          "color": {
+            "value": "#ffffff"
+          },
+          "bg": {
+            "value": "#426277"
+          }
+        },
+        "tertiary-light": {
+          "color": {
+            "value": "#001e2d"
+          },
+          "bg": {
+            "value": "#c6e7ff"
+          }
+        }
+      },
+      "text": {
+        "primary": {
+          "light": {
+            "value": "#ffffff"
+          },
+          "dark": {
+            "value": "#00382d"
+          }
+        }
+      },
+      "container": {}
+    }
+  }
+}

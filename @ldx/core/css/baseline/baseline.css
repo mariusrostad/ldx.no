@@ -1,0 +1,61 @@
+@import "@ldx/ds-tokens";
+@import "normalize.css";
+
+html,
+:host {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root,
+:host,
+[data-theme="light"] {
+  color: var(--ldx-ds-text-primary);
+}
+
+[data-theme="dark"] {
+  color: var(--ldx-ds-text-secondary);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root,
+  :host,
+  html {
+    color-scheme: dark;
+    color: var(--ldx-ds-text-secondary);
+  }
+}
+
+body,
+:host {
+  font-family: var(--ldx-ds-font-family, "Source Sans Pro", Arial, sans-serif);
+  line-height: 1.333;
+  font-size: 1.125rem;
+}
+
+a {
+  color: var(--a-text-action);
+}
+
+button {
+  color: inherit;
+}
+
+/* https://web.dev/prefers-reduced-motion/ */
+@media (prefers-reduced-motion: reduce) {
+  ::before,
+  ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+}

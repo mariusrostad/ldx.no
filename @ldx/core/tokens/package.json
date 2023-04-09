@@ -20,7 +20,7 @@
   "scripts": {
     "build": "node ./config/build.js > /dev/null",
     "clean": "rimraf dist node_modules .turbo",
-    "watch": "nodemon --watch src/index.js --exec \"yarn build\"",
+    "watch": "nodemon --watch src/index.js --exec \"pnpm build\"",
     "token": "cd config && style-dictionary build",
     "test": "jest"
   },

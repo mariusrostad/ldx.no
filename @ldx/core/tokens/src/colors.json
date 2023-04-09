@@ -8,11 +8,14 @@
         "value": "rgba(255, 255, 255, 1)"
       },
       "source": {
-        "value": "rgba(0, 107, 88, 1)"
+        "value": "#006b58"
       },
       "text": {
         "primary": {
-          "value": "#444f55"
+          "value": "#002019"
+        },
+        "secondary": {
+          "value": "#ffffff"
         }
       },
       "border": {
