@@ -1,7 +1,7 @@
 {
   "ldx": {
     "ds": {
-      "light": {
+      "text": {
         "primary": {
           "color": {
             "value": "#ffffff"
@@ -48,16 +48,6 @@
           },
           "bg": {
             "value": "#c6e7ff"
-          }
-        }
-      },
-      "text": {
-        "primary": {
-          "light": {
-            "value": "#ffffff"
-          },
-          "dark": {
-            "value": "#00382d"
           }
         }
       },

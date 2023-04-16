@@ -1,5 +1,3 @@
-import SearchBar from "./components/search/SearchButton";
-
 export default function Home() {
   return (
     <main>
@@ -10,8 +8,8 @@ export default function Home() {
           padding: "32px",
         }}
       >
-        <h1>Marius Rostad.no</h1>
-        <SearchBar />
+        <h1 className="primary-color">Velkommen til Marius Rostad.no</h1>
+        <p>Sjekk ut våre tjenester</p>
       </div>
     </main>
   );

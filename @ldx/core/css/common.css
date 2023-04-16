@@ -1,3 +1,7 @@
 .hidden {
   display: none;
 }
+
+.primary-color {
+  color: var(--ldx-ds-primary);
+}

@@ -12,25 +12,6 @@ html,
   box-sizing: inherit;
 }
 
-:root,
-:host,
-[data-theme="light"] {
-  color: var(--ldx-ds-text-primary);
-}
-
-[data-theme="dark"] {
-  color: var(--ldx-ds-text-secondary);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root,
-  :host,
-  html {
-    color-scheme: dark;
-    color: var(--ldx-ds-text-secondary);
-  }
-}
-
 body,
 :host {
   font-family: var(--ldx-ds-font-family, "Source Sans Pro", Arial, sans-serif);
@@ -38,8 +19,63 @@ body,
   font-size: 1.125rem;
 }
 
+h1 {
+  font-size: var(--ldx-ds-font-size-heading-xlarge);
+  line-height: var(--ldx-ds-font-line-height-heading-xlarge);
+  margin: var(--ldx-ds-spacing-8) 0;
+}
+
+h2 {
+  font-size: var(--ldx-ds-font-size-heading-large);
+  line-height: var(--ldx-ds-font-line-height-heading-large);
+  margin: var(--ldx-ds-spacing-4) 0;
+}
+
+h3 {
+  font-size: var(--ldx-ds-font-size-heading-medium);
+  line-height: var(--ldx-ds-font-line-height-heading-medium);
+  margin: var(--ldx-ds-spacing-2) 0;
+}
+
+h4 {
+  font-size: var(--ldx-ds-font-size-xlarge);
+  line-height: var(--ldx-ds-font-line-height-xlarge);
+  margin: var(--ldx-ds-spacing-2) 0;
+}
+
+h5 {
+  font-size: var(--ldx-ds-font-size-large);
+  line-height: var(--ldx-ds-font-line-height-large);
+  margin: var(--ldx-ds-spacing-2) 0;
+}
+
+h6 {
+  font-size: var(--ldx-ds-font-size-medium);
+  line-height: var(--ldx-ds-font-line-height-medium);
+  margin: var(--ldx-ds-spacing-2) 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
 a {
-  color: var(--a-text-action);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration: underline;
+  border-width: 2px;
+}
+
+p {
+  font-weight: 300;
 }
 
 button {
