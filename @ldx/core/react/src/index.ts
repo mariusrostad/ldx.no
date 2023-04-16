@@ -1,3 +1,1 @@
-export function Test() {
-  return 1 * 2;
-}
+export * from "./icons/Search";
