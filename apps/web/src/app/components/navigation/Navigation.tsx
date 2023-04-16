@@ -1,10 +1,18 @@
 import Link from "next/link";
-import "./Navigation.modules.css";
+import styles from "./Navigation.module.css";
 
 export default function Navigation() {
   return (
-    <nav>
-      <Link href={"/"}>Marius Rostad.no</Link>
+    <nav className={styles.nav}>
+      <Link
+        href={"/"}
+        style={{
+          padding: "16px",
+        }}
+      >
+        Marius Rostad.no
+      </Link>
+
       <ul>
         <li>
           <Link href={"/"}>Home</Link>
