@@ -1,0 +1,113 @@
+{
+  "ldx": {
+    "ds": {
+      "primary": {
+        "value": "#3d205b"
+      },
+      "white": {
+        "text": {
+          "value": "#000000"
+        },
+        "bg": {
+          "value": "#ffffff"
+        }
+      },
+      "purple": {
+        "text": {
+          "value": "#744c9d"
+        },
+        "bg": {
+          "value": "#ffffff"
+        },
+        "inverse": {
+          "text": {
+            "value": "#ffffff"
+          },
+          "bg": {
+            "value": "#744c9d"
+          }
+        },
+        "dark": {
+          "text": {
+            "value": "#efdbff"
+          },
+          "bg": {
+            "value": "#2c0051"
+          },
+          "inverse": {
+            "text": {
+              "value": "#2c0051"
+            },
+            "bg": {
+              "value": "#efdbff"
+            }
+          }
+        }
+      },
+      "green": {
+        "text": {
+          "value": "#006d3b"
+        },
+        "bg": {
+          "value": "#ffffff"
+        },
+        "inverse": {
+          "text": {
+            "value": "#ffffff"
+          },
+          "bg": {
+            "value": "#006d3b"
+          }
+        },
+        "dark": {
+          "text": {
+            "value": "#99f6b5"
+          },
+          "bg": {
+            "value": "#00210e"
+          },
+          "inverse": {
+            "text": {
+              "value": "#00210e"
+            },
+            "bg": {
+              "value": "#99f6b5"
+            }
+          }
+        }
+      },
+      "blue": {
+        "text": {
+          "value": "#006970"
+        },
+        "bg": {
+          "value": "#ffffff"
+        },
+        "inverse": {
+          "text": {
+            "value": "#ffffff"
+          },
+          "bg": {
+            "value": "#006970"
+          }
+        },
+        "dark": {
+          "text": {
+            "value": "#7af4ff"
+          },
+          "bg": {
+            "value": "#002022"
+          },
+          "inverse": {
+            "text": {
+              "value": "#002022"
+            },
+            "bg": {
+              "value": "#7af4ff"
+            }
+          }
+        }
+      }
+    }
+  }
+}
