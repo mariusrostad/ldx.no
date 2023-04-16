@@ -1,0 +1,66 @@
+.searchbarInputWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #444f55;
+  max-width: 300px;
+}
+
+.searchbarInput {
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  border: 0;
+}
+
+.searchbarInput:focus {
+  outline: 0.188rem solid var(--ldx-ds-primary-60) !important;
+}
+
+.searchbarButton {
+  position: absolute;
+  right: 0.2rem;
+  background: inherit;
+  border: 0;
+  width: 2.25rem;
+  height: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchbarButton:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.searchbarButton:focus-visible {
+  line-height: 1.9rem;
+
+  border: 0.1875rem solid #444f55;
+  outline: 0.1875rem solid var(--ldx-ds-primary-60);
+  outline-offset: 0.0625rem;
+}
+
+.searchButton {
+  background: #444f55;
+  border: 0;
+  margin-left: 1rem;
+  height: 100%;
+  width: 2.99rem;
+  cursor: pointer;
+}
+
+.searchButton:focus-visible {
+  outline: 0.188rem solid var(--ldx-ds-primary-50) !important;
+  outline-offset: 0.1rem;
+}
+
+.searchIcon {
+  color: #ffffff;
+}
+
+.formElement {
+  display: flex;
+  flex-direction: row;
+}
