@@ -1,9 +1,15 @@
+export const metadata = {
+  title: "Designsystem ldx.no",
+  description: "Designsystem nettside for ldx.no",
+};
+
 export default function DesignSystem() {
   return (
     <main
       style={{
-        padding: "0 var(--ldx-ds-spacing-4)",
-        maxWidth: "",
+        padding: "0 var(--ldx-ds-spacing-8)",
+        maxWidth: "var(--ldx-ds-breakpoint-lg)",
+        margin: "auto",
       }}
     >
       <h1 className="primary-color">H1 velkommen til MariusRostad.no</h1>

@@ -1,10 +1,10 @@
-import Navigation from "./components/navigation/Navigation";
+import Navigation from "../components/navigation/Navigation";
 import "./globals.css";
 import "@ldx/ds-css/dist/index.css";
 
 export const metadata = {
-  title: "Marius Rostad.no",
-  description: "Personlig nettside til Marius Rostad",
+  title: "ldx.no",
+  description: "Nettside laget av Marius Rostad",
 };
 
 export default function RootLayout({
