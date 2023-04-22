@@ -21,6 +21,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   max-width: var(--ldx-ds-breakpoint-xl);
   margin: auto;
   padding: 16px;
@@ -33,7 +34,8 @@
 
 .ldx-ds-nav-inner ul li {
   list-style-type: none;
-  padding: 16px;
+  padding: 16px 0;
+  align-items: center;
 }
 
 .ldx-ds-nav-inner ul li a {
