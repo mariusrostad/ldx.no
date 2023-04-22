@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import cl from "clsx";
 import styles from "./SearchBar.module.css";
-import Search from "@ldx/ds-react/esm/icons/Search";
+import Search from "@ldx/ds-react/src/icons/Search";
 
 export interface SearchBarProps {}
 
