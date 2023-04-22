@@ -14,7 +14,7 @@ export default function Navigation() {
             padding: "16px",
           }}
         >
-          Marius Rostad.no
+          LDX.no
         </Link>
         <ul>
           <li>
