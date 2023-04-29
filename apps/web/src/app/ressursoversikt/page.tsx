@@ -15,17 +15,18 @@ export default function Ressursoversikt() {
         <table>
           <thead>
             <tr>
-              {periods.map((period) => (
-                <th>{period.week}</th>
+              {periods.map((period, key) => (
+                <th key={key}>{period.week}</th>
               ))}
             </tr>
           </thead>
           <tbody>
             <tr>
-              {periods.map((period) => (
-                <td>
-                  {period.entries.map((entry) => (
+              {periods.map((period, key) => (
+                <td key={key}>
+                  {period.entries.map((entry, key) => (
                     <div
+                      key={key}
                       style={{
                         border: "1px solid black",
                         borderRadius: "16px",
