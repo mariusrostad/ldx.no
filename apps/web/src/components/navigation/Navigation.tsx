@@ -23,6 +23,9 @@ export default function Navigation() {
           <li>
             <Link href={"/ds"}>DesignSystem</Link>
           </li>
+          <li>
+            <Link href={"/ressursoversikt"}>Ressursoversikt</Link>
+          </li>
         </ul>
       </div>
     </nav>
