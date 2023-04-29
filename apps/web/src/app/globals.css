@@ -5,9 +5,37 @@
   font-family: var(--ldx-ds-font-family);
 }
 
-/* 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+body {
+  background-color: #efefef;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
   }
-} */
+}
+
+.card {
+  border: 1px solid var(--ldx-ds-purple-text);
+  border-radius: var(--ldx-ds-spacing-2);
+  /* background-color: var(--ldx-ds-purple-bg); */
+  /* color: var(--ldx-ds-purple-text); */
+
+  padding: var(--ldx-ds-spacing-4);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card p {
+  font-size: var(--ldx-ds-font-size-medium);
+}
