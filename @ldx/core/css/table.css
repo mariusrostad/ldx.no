@@ -1,0 +1,27 @@
+.ldxds-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.ldxds-table th {
+  background-color: var(--ldx-ds-green-dark-bg);
+  color: var(--ldx-ds-green-dark-text);
+}
+
+.ldxds-table td,
+.ldxds-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.ldxds-table td:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.ldxds-table a {
+  color: #000000;
+}
+
+.ldxds-table a:hover {
+  color: var(--ldx-ds-green-dark-inverse-text);
+}

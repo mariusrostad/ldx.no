@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { RESSURSOVERSIKT_MOCK } from "../../mocks/ressursoversiktmock";
 
 export default function Ressursoversikt() {
@@ -10,9 +11,15 @@ export default function Ressursoversikt() {
         padding: "32px",
       }}
     >
-      <h1>Ressursoversikt</h1>
+      <h1
+        style={{
+          color: "var(--ldx-ds-green-dark-inverse-text)",
+        }}
+      >
+        Ressursoversikt
+      </h1>
       <div>
-        <table>
+        <table className="ldxds-table">
           <thead>
             <tr>
               {periods.map((period) => (
@@ -22,25 +29,29 @@ export default function Ressursoversikt() {
           </thead>
           <tbody>
             <tr>
-              {periods.map((period, key) => (
+              {periods.map((period) => (
                 <td key={"period-" + period.week}>
-                  {period.entries.map((entry, key) => (
-                    <div
-                      key={key}
-                      style={{
-                        border: "1px solid black",
-                        borderRadius: "16px",
-                        padding: "16px",
-                        marginTop: "16px",
-                      }}
+                  {period.entries.map((entry) => (
+                    <Link
+                      href={"/test"}
+                      key={
+                        period.week + " " + entry.project?.name ??
+                        "ikke-i-prosjekt" + entry.project?.customer
+                      }
                     >
-                      {entry.user.name}
-                      <br />
-                      {entry.project?.customer != null
-                        ? entry.project.customer + " - "
-                        : ""}
-                      {entry.project?.name ?? "Ikke i prosjekt"}
-                    </div>
+                      <div
+                        style={{
+                          borderBottom: "1px solid black",
+                        }}
+                      >
+                        {entry.user.name}
+                        <br />
+                        {entry.project?.customer != null
+                          ? entry.project.customer + " - "
+                          : ""}
+                        {entry.project?.name ?? "Ikke i prosjekt"}
+                      </div>
+                    </Link>
                   ))}
                 </td>
               ))}
