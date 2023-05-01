@@ -26,8 +26,6 @@ body {
 .card {
   border: 1px solid var(--ldx-ds-purple-text);
   border-radius: var(--ldx-ds-spacing-2);
-  /* background-color: var(--ldx-ds-purple-bg); */
-  /* color: var(--ldx-ds-purple-text); */
 
   padding: var(--ldx-ds-spacing-4);
 }
@@ -38,4 +36,9 @@ body {
 
 .card p {
   font-size: var(--ldx-ds-font-size-medium);
+}
+
+.card-link {
+  text-decoration-color: #000000;
+  color: #000000;
 }
