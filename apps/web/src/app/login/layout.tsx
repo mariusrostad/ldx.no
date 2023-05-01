@@ -1,5 +1,5 @@
-import Navigation from "../components/navigation/Navigation";
-import "./globals.css";
+import Navigation from "../../components/navigation/Navigation";
+import "../globals.css";
 import "@ldx/ds-css/dist/index.css";
 
 export const metadata = {
@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="no">
       <body>
-        <Navigation isLoggedIn={true} />
+        <Navigation isLoggedIn={false} />
         {children}
       </body>
     </html>

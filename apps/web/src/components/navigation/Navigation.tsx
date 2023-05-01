@@ -1,7 +1,12 @@
 import Link from "next/link";
 import cl from "clsx";
 
-export default function Navigation() {
+export interface NavigationProps {
+  isLoggedIn: boolean;
+}
+
+export default function Navigation(props: NavigationProps) {
+  const { isLoggedIn } = props;
   return (
     <nav
       className={cl("ldx-ds-nav")}
@@ -17,15 +22,25 @@ export default function Navigation() {
           LDX.no
         </Link>
         <ul>
-          <li>
-            <Link href={"/"}>Hjem</Link>
-          </li>
-          <li>
-            <Link href={"/ds"}>DesignSystem</Link>
-          </li>
-          <li>
-            <Link href={"/ressursoversikt"}>Ressursoversikt</Link>
-          </li>
+          {isLoggedIn ? (
+            <>
+              <li>
+                <Link href={"/"}>Hjem</Link>
+              </li>
+              <li>
+                <Link href={"/ds"}>DesignSystem</Link>
+              </li>
+              <li>
+                <Link href={"/ressursoversikt"}>Ressursoversikt</Link>
+              </li>
+            </>
+          ) : (
+            <>
+              <li>
+                <Link href={"/login"}>Login</Link>
+              </li>
+            </>
+          )}
         </ul>
       </div>
     </nav>
