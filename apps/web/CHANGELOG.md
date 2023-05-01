@@ -1,5 +1,11 @@
 # web
 
+## 0.2.2
+
+### Patch Changes
+
+- Fjernet mariusrostad.no fra eksempel tekster, og lagt til card vertikal gapping for mobil visning
+
 ## 0.2.1
 
 ### Patch Changes
