@@ -1,4 +1,4 @@
-import { RESSURSOVERSIKT_MOCK } from "../mocks/ressursoversiktmock";
+import { RESSURSOVERSIKT_MOCK } from "../../mocks/ressursoversiktmock";
 
 export default function Ressursoversikt() {
   const periods = RESSURSOVERSIKT_MOCK.periods;
@@ -15,15 +15,15 @@ export default function Ressursoversikt() {
         <table>
           <thead>
             <tr>
-              {periods.map((period, key) => (
-                <th key={key}>{period.week}</th>
+              {periods.map((period) => (
+                <th key={"heading-" + period.week}>{period.week}</th>
               ))}
             </tr>
           </thead>
           <tbody>
             <tr>
               {periods.map((period, key) => (
-                <td key={key}>
+                <td key={"period-" + period.week}>
                   {period.entries.map((entry, key) => (
                     <div
                       key={key}
