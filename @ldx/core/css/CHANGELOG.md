@@ -1,5 +1,11 @@
 # @ldx/ds-css
 
+## 0.2.2
+
+### Patch Changes
+
+- Tabell designsystem styler og linker i web
+
 ## 0.2.1
 
 ### Patch Changes
