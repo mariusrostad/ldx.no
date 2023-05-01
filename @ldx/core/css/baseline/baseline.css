@@ -78,6 +78,10 @@ p {
   font-weight: 300;
 }
 
+b {
+  font-weight: bold;
+}
+
 button {
   color: inherit;
 }
