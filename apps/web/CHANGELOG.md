@@ -1,5 +1,13 @@
 # web
 
+## 0.2.3
+
+### Patch Changes
+
+- Tabell designsystem styler og linker i web
+- Updated dependencies
+  - @ldx/ds-css@0.2.2
+
 ## 0.2.2
 
 ### Patch Changes
