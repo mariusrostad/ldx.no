@@ -1,5 +1,11 @@
 # web
 
+## 0.2.4
+
+### Patch Changes
+
+- Upgraded to Next JS 13.4
+
 ## 0.2.3
 
 ### Patch Changes
