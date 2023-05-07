@@ -1,5 +1,11 @@
 # web
 
+## 0.2.5
+
+### Patch Changes
+
+- Moved /ds to /designsystem, and upgraded Next JS patch version
+
 ## 0.2.4
 
 ### Patch Changes
