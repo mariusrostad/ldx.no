@@ -28,7 +28,7 @@ export default function Navigation(props: NavigationProps) {
                 <Link href={"/"}>Hjem</Link>
               </li>
               <li>
-                <Link href={"/ds"}>DesignSystem</Link>
+                <Link href={"/designsystem"}>DesignSystem</Link>
               </li>
               <li>
                 <Link href={"/ressursoversikt"}>Ressursoversikt</Link>

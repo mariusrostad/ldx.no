@@ -19,7 +19,7 @@ export default function DesignSystem() {
       <h4 className="primary-color">H4 med en fin og tekst</h4>
       <h5 className="primary-color">H5 med en fin og tekst</h5>
       <h6 className="primary-color">H6 med en fin og tekst</h6>
-      <a href="/ds">Link html tag</a>
+      <a href="/designsystem">Link html tag</a>
       <p>Paragraph tekst</p>
       <b>Bold tekst</b>
     </main>
