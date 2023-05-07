@@ -15,13 +15,10 @@ export default function Home() {
           <b>Sjekk ut våre tjenester</b>
         </p>
         <div className="card-container">
-          <Link href={"/ds"} className="card-link">
+          <Link href={"/designsystem"} className="card-link">
             <div className="card">
               <h2>Designsystem</h2>
-              <p>
-                Den visuelle representasjonen av ldx.no / mariusrostad.no /
-                mariusrostad.com
-              </p>
+              <p>Den visuelle representasjonen av ldx.no</p>
             </div>
           </Link>
           <Link href={"/ressursoversikt"} className="card-link">

@@ -29,6 +29,8 @@ body {
   border-radius: var(--ldx-ds-spacing-2);
 
   padding: var(--ldx-ds-spacing-4);
+
+  height: 100%;
 }
 
 .card h2 {
