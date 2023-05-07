@@ -13,7 +13,7 @@
     "@ldx/ds-react": "workspace:*",
     "@ldx/ds-tokens": "workspace:*",
     "clsx": "1.2.1",
-    "next": "13.4.0",
+    "next": "~13.4.1",
     "next-auth": "4.22.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -24,7 +24,7 @@
     "@types/node": "^18.15.11",
     "@types/react": "^18.2.5",
     "@types/react-dom": "^18.2.3",
-    "eslint": "8.39.0",
+    "eslint": "8.40.0",
     "eslint-config-custom": "workspace:*",
     "tsconfig": "workspace:*",
     "typescript": "^5.0.4"
