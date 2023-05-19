@@ -1,5 +1,11 @@
 # @ldx/ds-css
 
+## 0.2.3
+
+### Patch Changes
+
+- Table colors and Next JS minor version upgrade
+
 ## 0.2.2
 
 ### Patch Changes

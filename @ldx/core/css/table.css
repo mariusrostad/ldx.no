@@ -4,8 +4,8 @@
 }
 
 .ldxds-table th {
-  background-color: var(--ldx-ds-green-dark-bg);
-  color: var(--ldx-ds-green-dark-text);
+  background-color: var(--ldx-ds-purple-dark-bg);
+  color: var(--ldx-ds-purple-dark-text);
 }
 
 .ldxds-table td,
@@ -23,5 +23,5 @@
 }
 
 .ldxds-table a:hover {
-  color: var(--ldx-ds-green-dark-inverse-text);
+  color: var(--ldx-ds-purple-dark-inverse-text);
 }
