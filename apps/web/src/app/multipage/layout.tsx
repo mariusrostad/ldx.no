@@ -1,4 +1,6 @@
-import cl from "clsx";
+export const metadata = {
+  title: "Multi page example | LDX.no",
+};
 
 interface TestLayoutProps {
   children: React.ReactNode;
