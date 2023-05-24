@@ -1,5 +1,11 @@
 # web
 
+## 0.2.7
+
+### Patch Changes
+
+- Rapportweb map and chore
+
 ## 0.2.6
 
 ### Patch Changes
