@@ -1,26 +1,26 @@
-interface Ressursoversikt {
-  periods: Period[];
+export interface Ressursoversikt {
+  periods: Period[]
 }
 
-interface Period {
-  entries: PeriodEntries[];
-  week: string;
+export interface Period {
+  entries: PeriodEntries[]
+  week: string
 }
 
-interface PeriodEntries {
-  user: User;
-  status: ConsultantStatus;
-  project?: Project;
+export interface PeriodEntries {
+  user: User
+  status: ConsultantStatus
+  project?: Project
 }
 
-type ConsultantStatus = "project" | "reserved" | "available";
+export type ConsultantStatus = "project" | "reserved" | "available"
 
-interface Project {
-  name: string;
-  customer?: string;
+export interface Project {
+  name: string
+  customer?: string
 }
 
-interface User {
-  id: number;
-  name: string;
+export interface User {
+  id: number
+  name: string
 }

@@ -1,27 +1,28 @@
-"use client";
-import { useEffect, useState } from "react";
-import cl from "clsx";
-import styles from "./SearchBar.module.css";
-import Search from "@ldx/ds-react/src/icons/Search";
+"use client"
+import { useEffect, useState } from "react"
+import cl from "clsx"
+import styles from "./SearchBar.module.css"
+import Search from "@ldx/ds-react/src/icons/Search"
 
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface SearchBarProps {}
 
 export default function SearchBar() {
-  const [hasText, setHasText] = useState<boolean>(false);
-  const [inputValue, setInputValue] = useState<string>("");
+  const [hasText, setHasText] = useState<boolean>(false)
+  const [inputValue, setInputValue] = useState<string>("")
 
   useEffect(() => {
-    setHasText(() => inputValue.length !== 0);
-  }, [inputValue]);
+    setHasText(() => inputValue.length !== 0)
+  }, [inputValue])
 
   const clearText = () => {
-    setInputValue(""); // Clear input value
+    setInputValue("") // Clear input value
 
     const searchBar = document.getElementById(
       "searchbar-input"
-    ) as HTMLInputElement;
-    searchBar.focus();
-  };
+    ) as HTMLInputElement
+    searchBar.focus()
+  }
 
   return (
     <div className="searchbar">
@@ -69,5 +70,5 @@ export default function SearchBar() {
         </div>
       </div>
     </div>
-  );
+  )
 }

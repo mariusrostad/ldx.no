@@ -17,5 +17,5 @@ export default function TeamsPage() {
       </div>
       <hr />
     </>
-  );
+  )
 }

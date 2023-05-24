@@ -5,5 +5,5 @@ export default function TestPage() {
       <p>with some incredible writing</p>
       <hr />
     </>
-  );
+  )
 }

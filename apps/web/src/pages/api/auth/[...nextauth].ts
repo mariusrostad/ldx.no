@@ -1,5 +1,5 @@
-import NextAuth, { NextAuthOptions } from "next-auth";
-import GithubProvider from "next-auth/providers/github";
+import NextAuth, { NextAuthOptions } from "next-auth"
+import GithubProvider from "next-auth/providers/github"
 
 export const authOptions: NextAuthOptions = {
   session: {
@@ -17,21 +17,21 @@ export const authOptions: NextAuthOptions = {
   callbacks: {
     async session({ token, session }) {
       if (token) {
-        session.user.id = token.id;
-        session.user.name = token.name;
-        session.user.email = token.email;
-        session.user.image = token.picture;
+        session.user.id = token.id
+        session.user.name = token.name
+        session.user.email = token.email
+        session.user.image = token.picture
       }
 
-      return session;
+      return session
     },
     async jwt({ token, user }) {
       if (user) {
-        token.id = user?.id;
+        token.id = user?.id
       }
-      return token;
+      return token
     },
   },
-};
+}
 
-export default NextAuth(authOptions);
+export default NextAuth(authOptions)

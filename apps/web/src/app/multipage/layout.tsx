@@ -1,11 +1,11 @@
 export const metadata = {
   title: "Multi page example | LDX.no",
-};
+}
 
 interface TestLayoutProps {
-  children: React.ReactNode;
-  analytics: React.ReactNode;
-  teams: React.ReactNode;
+  children: React.ReactNode
+  analytics: React.ReactNode
+  teams: React.ReactNode
 }
 
 export default function TestLayout(props: TestLayoutProps) {
@@ -22,5 +22,5 @@ export default function TestLayout(props: TestLayoutProps) {
       {props.teams}
       {props.analytics}
     </main>
-  );
+  )
 }

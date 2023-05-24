@@ -1,12 +1,12 @@
-import Link from "next/link";
-import { RESSURSOVERSIKT_MOCK } from "../../mocks/ressursoversiktmock";
+import Link from "next/link"
+import { RESSURSOVERSIKT_MOCK } from "../../mocks/ressursoversiktmock"
 
 export const metadata = {
   title: "Ressursoversikt | LDX.no",
-};
+}
 
 export default function Ressursoversikt() {
-  const periods = RESSURSOVERSIKT_MOCK.periods;
+  const periods = RESSURSOVERSIKT_MOCK.periods
   return (
     <main
       style={{
@@ -64,5 +64,5 @@ export default function Ressursoversikt() {
         </table>
       </div>
     </main>
-  );
+  )
 }

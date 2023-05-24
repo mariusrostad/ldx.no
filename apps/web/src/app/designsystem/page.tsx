@@ -2,7 +2,7 @@ export const metadata = {
   title: "Designsystemet til ldx.no",
   description:
     "Et design system er et sett med komponenter og visuellet stiler som leverer den visuelle profilen til nettstedet.",
-};
+}
 
 export default function DesignSystem() {
   return (
@@ -23,5 +23,5 @@ export default function DesignSystem() {
       <p>Paragraph tekst</p>
       <b>Bold tekst</b>
     </main>
-  );
+  )
 }

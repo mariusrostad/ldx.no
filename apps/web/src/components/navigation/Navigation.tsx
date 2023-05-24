@@ -1,12 +1,12 @@
-import Link from "next/link";
-import cl from "clsx";
+import Link from "next/link"
+import cl from "clsx"
 
 export interface NavigationProps {
-  isLoggedIn: boolean;
+  isLoggedIn: boolean
 }
 
 export default function Navigation(props: NavigationProps) {
-  const { isLoggedIn } = props;
+  const { isLoggedIn } = props
   return (
     <nav
       className={cl("ldx-ds-nav")}

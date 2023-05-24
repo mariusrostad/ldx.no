@@ -1,3 +1,5 @@
+import { Ressursoversikt } from "@/models/ressursoversikt"
+
 export const RESSURSOVERSIKT_MOCK: Ressursoversikt = {
   periods: [
     {
@@ -107,4 +109,4 @@ export const RESSURSOVERSIKT_MOCK: Ressursoversikt = {
       week: "Uke 3",
     },
   ],
-};
+}
