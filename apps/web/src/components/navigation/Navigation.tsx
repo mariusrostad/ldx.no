@@ -33,6 +33,9 @@ export default function Navigation(props: NavigationProps) {
               <li>
                 <Link href={"/ressursoversikt"}>Ressursoversikt</Link>
               </li>
+              <li>
+                <Link href={"/rapportweb"}>Rapportweb</Link>
+              </li>
             </>
           ) : (
             <>
@@ -44,5 +47,5 @@ export default function Navigation(props: NavigationProps) {
         </ul>
       </div>
     </nav>
-  );
+  )
 }
