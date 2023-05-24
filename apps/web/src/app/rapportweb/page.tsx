@@ -1,8 +1,8 @@
-import RapportwebWrapper from "@/components/rapportweb/RapportwebWrapper"
+import dynamic from "next/dynamic"
 import "./rapportweb.scss"
 
 export default function RapportwebPage() {
-  // https://ogckart-sn1.atlas.vegvesen.no/norstoy_1_0/wfs?service=wfs&request=GetCapabilities
+  const RapportwebWrapperDynamic = dynamic(() => import("../../components/rapportweb/RapportwebWrapper"), { ssr: false})
   return (
     <main className="rapportweb-page">
       <div
@@ -15,7 +15,7 @@ export default function RapportwebPage() {
         <h1 className="primary-color">SVV | Rapportweb</h1>
       </div>
       <div className="rapportweb">
-        <RapportwebWrapper />
+        <RapportwebWrapperDynamic />
       </div>
     </main>
   )
