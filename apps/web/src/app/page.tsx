@@ -30,6 +30,14 @@ export default function Home() {
               </p>
             </div>
           </Link>
+          <Link href={"/rapportweb"} className="card-link">
+            <div className="card">
+              <h2>Rapportweb</h2>
+              <p>
+                Kartløsning som bruker Statens Vegvsen sine Rapportweb WMS og WFS tjenester
+              </p>
+            </div>
+          </Link>
         </div>
       </div>
     </main>
